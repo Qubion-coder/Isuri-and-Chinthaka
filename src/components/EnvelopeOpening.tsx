@@ -60,14 +60,14 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           height: 400px;
           top: -100px;
           right: -100px;
-          background: radial-gradient(circle, rgba(197,160,89,0.15) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(212,175,55,0.2) 0%, transparent 70%);
         }
         .scene::after {
           width: 300px;
           height: 300px;
           bottom: -80px;
           left: -80px;
-          background: radial-gradient(circle, rgba(166,124,0,0.15) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(9,121,105,0.2) 0%, transparent 70%);
         }
 
         .envelope-container {
@@ -87,9 +87,9 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
         .envelope-base {
           position: absolute;
           inset: 0;
-          background: linear-gradient(145deg, #FDFBF7, #EAE3D2);
+          background: linear-gradient(145deg, #722F37, #3B1C22);
           border-radius: 6px;
-          box-shadow: 0 30px 60px -15px rgba(166,124,0,0.2), 0 0 0 1px rgba(197,160,89,0.3);
+          box-shadow: 0 30px 60px -15px rgba(59,28,34,0.3), 0 0 0 1px rgba(212,175,55,0.4);
           z-index: 1;
         }
 
@@ -97,11 +97,11 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
         .card-container {
           position: absolute;
           inset: 0;
-          background: linear-gradient(180deg, #FFFFFF 0%, #FDFBF7 50%, #FAF9F6 100%);
+          background: linear-gradient(180deg, #FFFFFF 0%, #FAF9F6 50%, #FDFBF7 100%);
           border-radius: 6px;
           z-index: 2;
           overflow: hidden;
-          box-shadow: inset 0 0 30px rgba(197,160,89,0.05);
+          box-shadow: inset 0 0 30px rgba(9,121,105,0.1);
           transform: scale(1);
           transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
         }
@@ -115,7 +115,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
         .card-border {
           position: absolute;
           inset: 18px;
-          border: 1.5px solid rgba(201,169,110,0.5);
+          border: 1.5px solid rgba(212,175,55,0.5);
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -128,7 +128,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           content: '';
           position: absolute;
           inset: 7px;
-          border: 0.5px solid rgba(201,169,110,0.2);
+          border: 0.5px solid rgba(212,175,55,0.2);
         }
 
         /* Corner Ornaments */
@@ -155,12 +155,12 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
         .divider-line {
           width: 50px;
           height: 0.5px;
-          background: linear-gradient(90deg, transparent, #c9a96e, transparent);
+          background: linear-gradient(90deg, transparent, #D4AF37, transparent);
         }
         .divider-diamond {
           width: 6px;
           height: 6px;
-          background: #c9a96e;
+          background: #D4AF37;
           transform: rotate(45deg);
           opacity: 0.7;
         }
@@ -171,7 +171,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           font-size: 10px;
           letter-spacing: 0.45em;
           text-transform: uppercase;
-          color: #A67C00;
+          color: #3B1C22;
           margin-bottom: 20px;
           margin-top: auto;
           z-index: 2;
@@ -182,7 +182,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           font-family: "Great Vibes", cursive;
           font-size: 60px;
           line-height: 1.1;
-          color: #A67C00;
+          color: #3B1C22;
           margin: 0 0 10px 0;
           font-weight: 400;
           z-index: 2;
@@ -196,8 +196,8 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           font-size: 40px;
           display: block;
           margin: -2px 0;
-          color: #c9a96e;
-          text-shadow: 0 1px 2px rgba(201,169,110,0.3);
+          color: #D4AF37;
+          text-shadow: 0 1px 2px rgba(212,175,55,0.3);
         }
 
         .text-details {
@@ -205,7 +205,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           font-size: 9.5px;
           letter-spacing: 0.22em;
           text-transform: uppercase;
-          color: #6b5b4e;
+          color: #722F37;
           line-height: 2.2;
           margin-bottom: auto;
           z-index: 2;
@@ -218,7 +218,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           font-size: 11px;
           font-weight: 500;
           letter-spacing: 0.28em;
-          color: #A67C00;
+          color: #3B1C22;
         }
 
         .text-church {
@@ -227,7 +227,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           font-style: italic;
           font-weight: 400;
           letter-spacing: 0.1em;
-          color: #A67C00;
+          color: #3B1C22;
           margin-top: 4px;
           text-transform: none;
         }
@@ -239,10 +239,10 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           left: 0;
           width: 66%;
           height: 100%;
-          background: linear-gradient(135deg, #FFFFFF 0%, #FAF9F6 50%, #EAE3D2 100%);
+          background: linear-gradient(135deg, #097969 0%, #722F37 50%, #3B1C22 100%);
           background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
-          border-right: 1px solid rgba(201,169,110,0.3);
-          box-shadow: 10px 0 30px -10px rgba(166,124,0,0.2);
+          border-right: 1px solid rgba(212,175,55,0.3);
+          box-shadow: 10px 0 30px -10px rgba(59,28,34,0.2);
           transform-origin: left center;
           transform: rotateY(0deg);
           transition: transform 1.5s cubic-bezier(0.25, 1, 0.3, 1), box-shadow 1.5s ease;
@@ -319,7 +319,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           bottom: -60px;
           left: 50%;
           transform: translateX(-50%);
-          color: #A67C00;
+          color: #3B1C22;
           font-family: "Montserrat", sans-serif;
           font-size: 10px;
           letter-spacing: 0.35em;
@@ -383,32 +383,32 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
             <div className="card-border">
               {/* 4 Corner Gold Ornaments */}
               <svg className="corner-ornament corner-tl" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5,5 L5,25 C5,15 15,5 25,5 L5,5 Z" fill="none" stroke="#c9a96e" strokeWidth="0.8" opacity="0.6"/>
-                <path d="M5,5 L5,18 C5,12 12,5 18,5 L5,5 Z" fill="#c9a96e" opacity="0.08"/>
-                <circle cx="5" cy="5" r="2" fill="#c9a96e" opacity="0.5"/>
-                <path d="M8,5 Q12,8 5,12" stroke="#c9a96e" strokeWidth="0.5" fill="none" opacity="0.4"/>
-                <path d="M5,8 Q8,12 12,5" stroke="#c9a96e" strokeWidth="0.5" fill="none" opacity="0.4" className="shimmer"/>
+                <path d="M5,5 L5,25 C5,15 15,5 25,5 L5,5 Z" fill="none" stroke="#D4AF37" strokeWidth="0.8" opacity="0.6"/>
+                <path d="M5,5 L5,18 C5,12 12,5 18,5 L5,5 Z" fill="#D4AF37" opacity="0.08"/>
+                <circle cx="5" cy="5" r="2" fill="#D4AF37" opacity="0.5"/>
+                <path d="M8,5 Q12,8 5,12" stroke="#D4AF37" strokeWidth="0.5" fill="none" opacity="0.4"/>
+                <path d="M5,8 Q8,12 12,5" stroke="#D4AF37" strokeWidth="0.5" fill="none" opacity="0.4" className="shimmer"/>
               </svg>
               <svg className="corner-ornament corner-tr" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5,5 L5,25 C5,15 15,5 25,5 L5,5 Z" fill="none" stroke="#c9a96e" strokeWidth="0.8" opacity="0.6"/>
-                <path d="M5,5 L5,18 C5,12 12,5 18,5 L5,5 Z" fill="#c9a96e" opacity="0.08"/>
-                <circle cx="5" cy="5" r="2" fill="#c9a96e" opacity="0.5"/>
-                <path d="M8,5 Q12,8 5,12" stroke="#c9a96e" strokeWidth="0.5" fill="none" opacity="0.4"/>
-                <path d="M5,8 Q8,12 12,5" stroke="#c9a96e" strokeWidth="0.5" fill="none" opacity="0.4" className="shimmer"/>
+                <path d="M5,5 L5,25 C5,15 15,5 25,5 L5,5 Z" fill="none" stroke="#D4AF37" strokeWidth="0.8" opacity="0.6"/>
+                <path d="M5,5 L5,18 C5,12 12,5 18,5 L5,5 Z" fill="#D4AF37" opacity="0.08"/>
+                <circle cx="5" cy="5" r="2" fill="#D4AF37" opacity="0.5"/>
+                <path d="M8,5 Q12,8 5,12" stroke="#D4AF37" strokeWidth="0.5" fill="none" opacity="0.4"/>
+                <path d="M5,8 Q8,12 12,5" stroke="#D4AF37" strokeWidth="0.5" fill="none" opacity="0.4" className="shimmer"/>
               </svg>
               <svg className="corner-ornament corner-bl" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5,5 L5,25 C5,15 15,5 25,5 L5,5 Z" fill="none" stroke="#c9a96e" strokeWidth="0.8" opacity="0.6"/>
-                <path d="M5,5 L5,18 C5,12 12,5 18,5 L5,5 Z" fill="#c9a96e" opacity="0.08"/>
-                <circle cx="5" cy="5" r="2" fill="#c9a96e" opacity="0.5"/>
-                <path d="M8,5 Q12,8 5,12" stroke="#c9a96e" strokeWidth="0.5" fill="none" opacity="0.4"/>
-                <path d="M5,8 Q8,12 12,5" stroke="#c9a96e" strokeWidth="0.5" fill="none" opacity="0.4" className="shimmer"/>
+                <path d="M5,5 L5,25 C5,15 15,5 25,5 L5,5 Z" fill="none" stroke="#D4AF37" strokeWidth="0.8" opacity="0.6"/>
+                <path d="M5,5 L5,18 C5,12 12,5 18,5 L5,5 Z" fill="#D4AF37" opacity="0.08"/>
+                <circle cx="5" cy="5" r="2" fill="#D4AF37" opacity="0.5"/>
+                <path d="M8,5 Q12,8 5,12" stroke="#D4AF37" strokeWidth="0.5" fill="none" opacity="0.4"/>
+                <path d="M5,8 Q8,12 12,5" stroke="#D4AF37" strokeWidth="0.5" fill="none" opacity="0.4" className="shimmer"/>
               </svg>
               <svg className="corner-ornament corner-br" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5,5 L5,25 C5,15 15,5 25,5 L5,5 Z" fill="none" stroke="#c9a96e" strokeWidth="0.8" opacity="0.6"/>
-                <path d="M5,5 L5,18 C5,12 12,5 18,5 L5,5 Z" fill="#c9a96e" opacity="0.08"/>
-                <circle cx="5" cy="5" r="2" fill="#c9a96e" opacity="0.5"/>
-                <path d="M8,5 Q12,8 5,12" stroke="#c9a96e" strokeWidth="0.5" fill="none" opacity="0.4"/>
-                <path d="M5,8 Q8,12 12,5" stroke="#c9a96e" strokeWidth="0.5" fill="none" opacity="0.4" className="shimmer"/>
+                <path d="M5,5 L5,25 C5,15 15,5 25,5 L5,5 Z" fill="none" stroke="#D4AF37" strokeWidth="0.8" opacity="0.6"/>
+                <path d="M5,5 L5,18 C5,12 12,5 18,5 L5,5 Z" fill="#D4AF37" opacity="0.08"/>
+                <circle cx="5" cy="5" r="2" fill="#D4AF37" opacity="0.5"/>
+                <path d="M8,5 Q12,8 5,12" stroke="#D4AF37" strokeWidth="0.5" fill="none" opacity="0.4"/>
+                <path d="M5,8 Q8,12 12,5" stroke="#D4AF37" strokeWidth="0.5" fill="none" opacity="0.4" className="shimmer"/>
               </svg>
 
               <div className="text-eyebrow">
@@ -422,9 +422,9 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
               </div>
 
               <h1 className="text-names">
-                Kalani
+                Isuri
                 <span className="text-ampersand">&</span>
-                &nbsp;Isuru
+                &nbsp;Duvindu
               </h1>
 
               <div className="divider">
@@ -435,9 +435,9 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
 
               <div className="text-details">
                 Request the honour of your presence<br />
-                <span className="text-date">Sunday 09 August 2026 At 09:00 AM</span>
-                <span className="text-church">Mandakini Club House</span><br />
-                Maradagahamula
+                <span className="text-date">Tuesday 05 January 2027 At 09:00 AM</span>
+                <span className="text-church">Hilton Colombo</span><br />
+                Colombo
               </div>
             </div>
           </div>

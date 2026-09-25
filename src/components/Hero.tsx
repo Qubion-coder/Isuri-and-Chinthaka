@@ -23,14 +23,14 @@ export const Hero: React.FC = () => {
         style={{ y: y1, scale }}
       >
         <img
-          src="/backgroundmain.jpg"
-          alt="Kalani and Isuru"
-          className="w-full h-full object-cover opacity-90"
-          style={{ objectPosition: 'center 20%' }}
+          src="/1.jpg"
+          alt="Isuri and Duvindu"
+          className="w-full h-full object-cover opacity-85"
+          style={{ objectPosition: 'center 15%' }}
         />
         {/* Soft elegant gradient overlays to ensure text readability & premium feel */}
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-ivory via-brand-ivory/30 to-brand-ivory/50" />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-beige/15 via-transparent to-brand-beige/10 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-ivory via-brand-ivory/50 to-brand-ivory/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-beige-deep/30 via-transparent to-brand-beige/20 mix-blend-overlay" />
       </motion.div>
 
       {/* Persistent subtle falling petals in background */}
@@ -65,10 +65,10 @@ export const Hero: React.FC = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[140%] bg-white/40 blur-[50px] sm:blur-[80px] rounded-full pointer-events-none" />
 
             <h1 className="relative text-6xl sm:text-[7rem] lg:text-[9.5rem] font-display text-stone-800 leading-[1.1] sm:leading-[0.9] drop-shadow-sm">
-              Kalani <br className="sm:hidden" />
+              Isuri <br className="sm:hidden" />
               <span className="text-brand-beige-deep italic font-light mx-2 sm:mx-6 text-5xl sm:text-[6rem] lg:text-[8rem] inline-block -translate-y-2 sm:-translate-y-6">&</span>
               <br className="sm:hidden" />
-              &nbsp;Isuru
+              &nbsp;Duvindu
             </h1>
           </div>
 
@@ -91,7 +91,7 @@ export const Hero: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-transparent pointer-events-none" />
               <span className="relative text-[16px] sm:text-3xl font-serif text-brand-beige-deep tracking-[0.2em] sm:tracking-[0.4em] font-medium drop-shadow-sm flex items-center gap-2 sm:gap-3 whitespace-nowrap">
                 <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-brand-gold flex-shrink-0" />
-                09 . 08 . 2026
+                05 . 01 . 2027
                 <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-brand-gold flex-shrink-0" />
               </span>
             </div>
@@ -103,7 +103,7 @@ export const Hero: React.FC = () => {
       <div className="absolute left-6 sm:left-10 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center gap-6 mix-blend-multiply opacity-70">
         <div className="w-[1px] h-24 bg-gradient-to-b from-transparent to-brand-beige-deep/50" />
         <p className="writing-mode-vertical text-[11px] uppercase tracking-[0.6em] text-brand-beige-deep font-semibold font-sans">
-          Mandakini Club House • Maradagahamula
+          Hilton • Colombo
         </p>
         <div className="w-[1px] h-24 bg-gradient-to-t from-transparent to-brand-beige-deep/50" />
       </div>
@@ -111,7 +111,7 @@ export const Hero: React.FC = () => {
       <div className="absolute right-6 sm:right-10 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center gap-6 mix-blend-multiply opacity-70">
         <div className="w-[1px] h-24 bg-gradient-to-b from-transparent to-brand-beige-deep/50" />
         <p className="writing-mode-vertical text-[11px] uppercase tracking-[0.6em] text-brand-beige-deep font-semibold font-sans rotate-180">
-          Save the Date • August 2026
+          Save the Date • January 2027
         </p>
         <div className="w-[1px] h-24 bg-gradient-to-t from-transparent to-brand-beige-deep/50" />
       </div>

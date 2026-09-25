@@ -2,15 +2,15 @@
 @import "tailwindcss";
 
 @theme {
-  /* Ivory & Gold Color Palette */
-  --color-brand-beige: #C5A059; /* Soft Gold */
-  --color-brand-beige-deep: #A67C00; /* Deep Gold */
+  /* Royal Maroon & Emerald Color Palette */
+  --color-brand-beige: #097969; /* Rich Emerald */
+  --color-brand-beige-deep: #722F37; /* Deep Maroon / Wine */
   --color-brand-champagne: #FDFBF7; /* Ivory */
   --color-brand-ivory: #FAF9F6; /* Cream */
-  --color-brand-gold: #D4AF37; /* Metallic Gold Accent */
+  --color-brand-gold: #D4AF37; /* Metallic Gold */
   --color-brand-gold-light: #F3E5AB;
-  --color-brand-mocha: #4A3B32; /* Deep brownish-gold for text/contrast */
-  --color-brand-sand: #EAE3D2; /* Light Gold / Sand */
+  --color-brand-mocha: #3B1C22; /* Very dark maroon for text */
+  --color-brand-sand: #EAE3D2; /* Light Sand */
 
   --font-serif: "Cormorant Garamond", serif;
   --font-display: "Great Vibes", cursive;
@@ -20,7 +20,7 @@
 
 :root {
   background-color: var(--color-brand-ivory);
-  color: #292524;
+  color: var(--color-brand-mocha);
 }
 
 html, body {
@@ -57,4 +57,18 @@ html, body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-brand-beige-deep);
+}
+
+/* Theme overrides for vibrant text */
+.text-stone-800 {
+  color: var(--color-brand-mocha) !important;
+}
+.text-stone-700 {
+  color: var(--color-brand-mocha) !important;
+}
+.text-stone-500 {
+  color: #722F37 !important; /* Maroon */
+}
+.text-stone-400 {
+  color: #097969 !important; /* Emerald */
 }
