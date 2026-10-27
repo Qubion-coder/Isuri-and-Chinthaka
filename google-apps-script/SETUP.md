@@ -6,11 +6,6 @@
    Otherwise they are created automatically, with headers, on the first submission.
 4. Deploy > New deployment > type **Web app**. Execute as: **Me**. Who has access: **Anyone**.
 5. Copy the Web App URL (ends in `/exec`).
-6. Create `.env` in the project root:
-
-   VITE_GOOGLE_APPS_SCRIPT_URL=YOUR_WEB_APP_URL
-
-   On Vercel, add the same variable under Project Settings > Environment Variables and redeploy.
-7. Restart the Vite dev server.
+6. Paste the URL into `SCRIPT_URL` in `src/weddingConfig.ts` (currently hard-coded).
 
 If you edit the script later, use Deploy > Manage deployments > Edit > New version (keeps the same URL).
