@@ -1,17 +1,16 @@
-1. Open your Google Sheet and create two tabs named RSVP and WISH.
-2. Open Extensions > Apps Script.
-3. Replace script content with code from google-apps-script/code.gs.
-4. Click Deploy > New deployment.
-5. Select type: Web app.
-6. Execute as: Me.
-7. Who has access: Anyone.
-8. Deploy and copy the Web App URL.
-9. In your project root, create a file named .env with:
+# Google Sheets setup (RSVP + Wishes)
 
-VITE_GOOGLE_APPS_SCRIPT_URL=YOUR_WEB_APP_URL
+1. Open the sheet: https://docs.google.com/spreadsheets/d/1fDiCg1tXBTmHxU04JG1UFO0tvb78RgRs8K3vYOHp2CA
+2. Extensions > Apps Script. Replace the contents of `Code.gs` with `code.ts` from the project root.
+3. (Optional) Select `setupSheets` and click Run to create the `RSVP` and `Wishes` tabs now.
+   Otherwise they are created automatically, with headers, on the first submission.
+4. Deploy > New deployment > type **Web app**. Execute as: **Me**. Who has access: **Anyone**.
+5. Copy the Web App URL (ends in `/exec`).
+6. Create `.env` in the project root:
 
-10. Restart Vite dev server.
+   VITE_GOOGLE_APPS_SCRIPT_URL=YOUR_WEB_APP_URL
 
-Notes:
-- If you update Apps Script code later, redeploy a new version.
-- The frontend sends RSVP to sheet RSVP and wishes to sheet WISH.
+   On Vercel, add the same variable under Project Settings > Environment Variables and redeploy.
+7. Restart the Vite dev server.
+
+If you edit the script later, use Deploy > Manage deployments > Edit > New version (keeps the same URL).
